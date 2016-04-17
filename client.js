@@ -14,7 +14,7 @@ var messages = [
     "text":"Comenzamos"
   }];
 
-  app.use(express.static('./'));
+  app.use(express.static('./public/'));
 
   io.on('connection', function(socket){
     console.log('Alguien se ha conectado con Sockets');
